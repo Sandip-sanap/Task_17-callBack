@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CallbackHell task</title>
+  <style>
+    body {
+      background-color: cadetblue;
+    }
+    h1 {
+      margin-top: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1 align="center"> </h1>
+  <script>
+    var counter = 10;
+    setTimeout(() => {
+      var heading = document.querySelector('h1')
+      heading.innerHTML = 10;
+      setTimeout(() => {
+        heading.innerHTML = 9;
+        setTimeout(() => {
+          heading.innerHTML = 8;
+          setTimeout(() => {
+            heading.innerHTML = 7;
+            setTimeout(() => {
+              heading.innerHTML = 6;
+              setTimeout(() => {
+                heading.innerHTML = 5;
+                setTimeout(() => {
+                  heading.innerHTML = 4;
+                  setTimeout(() => {
+                    heading.innerHTML = 3;
+                    setTimeout(() => {
+                      heading.innerHTML = 2;
+                      setTimeout(() => {
+                        heading.innerHTML = 1;
+                        setTimeout(() => {
+                          heading.innerHTML = "Happy Independence Day";
+                        }, 1000);
+                      }, 1000);
+                    }, 1000);
+                  }, 1000);
+                }, 1000);
+              }, 1000);
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  </script>
+</body>
+</html>
